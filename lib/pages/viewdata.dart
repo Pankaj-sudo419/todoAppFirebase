@@ -45,8 +45,8 @@ class _ViewDataPageState extends State<ViewDataPage> {
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
             gradient: LinearGradient(colors: [
-          Color(0xff1d1e26),
-          Color(0xff252041),
+          Color.fromARGB(255, 17, 17, 22),
+          Color.fromARGB(255, 22, 12, 80),
         ])),
         child: SingleChildScrollView(
           child: Column(
@@ -61,7 +61,7 @@ class _ViewDataPageState extends State<ViewDataPage> {
                     },
                     icon: Icon(
                       CupertinoIcons.arrow_left,
-                      color: Colors.white,
+                      color: Color.fromARGB(255, 236, 146, 146),
                       size: 28,
                     ),
                   ),
