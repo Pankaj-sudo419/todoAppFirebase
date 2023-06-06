@@ -1,7 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart' as firebase_auth;
-import 'package:todoapp/pages/SignUpPage.dart';
+import 'package:todoapp/pages/homepage.dart';
+import 'package:todoapp/pages/signin.dart';
+import 'package:todoapp/service/api_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -37,8 +39,15 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: prefer_const_constructors
+    fetchData();
     return MaterialApp(
-      home: SignUpPage(),
+      debugShowCheckedModeBanner: false,
+      //home: SignInPage(),
+      //home: SignUpPage1(),
+      //home: AddToDoPage1(),
+      //home: HomePage(),
+      home: SignInPage(),
     );
   }
 }
